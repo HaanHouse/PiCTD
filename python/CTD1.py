@@ -126,15 +126,14 @@ while True:
     file_write.write(Ts)
     time.sleep(.5)
     file_write.write("R\00")
-    time.sleep(1.5)
-    con=read_con()
     p=pres()
-    dp=(p-SL)/98.1
+    dp=(SL-p)/98.1
     dev=2
     Tc2 = read_temp()
     Tc2 = Tc2 + .13
     dev=1
     Tc1= read_temp()
+    con=read_con()
     tpt=str(datetime.datetime.now())
     fo = open(TXT, "a")
     fo.write(tpt[0:19])
