@@ -16,5 +16,7 @@ set-up and calibration of [Atlas-Scientific Conductivity](https://github.com/Atl
 [Adafruit's](http://adafruit.com) temperature probe [DS18B20 setup](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing/ds18b20)
 
 
-Til then I'll upload my
-python 2.7 files and my .txt .csv files from tests. file naming is 'CTD'+YY+MM+DD+HH+MM+'.txt'
+once you have those setup my
+python 2.7 file should work 
+
+and my .txt .csv files from tests. file naming is 'CTD'+YY+MM+DD+HH+MM+'.txt'
