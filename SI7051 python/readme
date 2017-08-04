@@ -1,0 +1,4 @@
+SI7051 surface mount calibrated temp running i2c
+Works in python 2.7 or 3.4
+sample to get it working
+going to use this in new PiCTD
