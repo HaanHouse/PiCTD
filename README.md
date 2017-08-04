@@ -20,3 +20,6 @@ once you have those setup my
 python 2.7 file should work 
 
 and my .txt .csv files from tests. file naming is 'CTD'+YY+MM+DD+HH+MM+'.txt'
+
+just added python file for SI7051 i2c temp prob will be added into new PiCTD
+learned some writing this so hopefully have CTD.py running in python 3
