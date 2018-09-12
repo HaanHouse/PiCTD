@@ -33,12 +33,12 @@ def raw_con():
         time.sleep(.7)
         res = file_read.read(31)         # read from the board
         res=res.replace('\x00','')
-	conly=res.find(',')
-        res=res[1:conly]
+	conly=res.find(',')              #if only doing conductivity comment out whole line and
+        res=res[1:conly]                 #remove 'conly' from this line
         return res
 
 def RTD():
-	fcntl.ioctl(file_read, I2C_SLAVE, 102)  #atlas scientific conductivity prob address 100
+	fcntl.ioctl(file_read, I2C_SLAVE, 102)  #atlas scientific temp prob address 102
 	fcntl.ioctl(file_write, I2C_SLAVE, 102)
         # reads a specified number of bytes from I2C, then parses and displays the result
         file_write.write("R\00")
@@ -68,8 +68,8 @@ def salinity(c,t,p):
 while True:
 	temp=RTD()
 	print "temp =",temp
-	c=read_con()
-	print "temp corrected con =",c
+	c=read_con()                     #comment out whole line if not doing salinity on EC EZO
+	print "temp corrected con =",c   #comment out whole line if not doing salinity on EC EZO
 	uc=raw_con()
 	print "No temp correction =",uc
 	s=salinity(uc,temp,0)
